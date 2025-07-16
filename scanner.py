@@ -163,8 +163,22 @@ class EmailAnalyzerApp:
         else:
             return "✅ Low Risk (No major threats found)"
 
+def export_report(self):
+        if not self.analysis_results:
+            return
 
-# Run the app
+        save_path = filedialog.asksaveasfilename(defaultextension=".csv", filetypes=[("CSV files", "*.csv")])
+        if not save_path:
+            return
+
+        with open(save_path, "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(["Check", "Result"])
+            for k, v in self.analysis_results.items():
+                writer.writerow([k, v])
+        messagebox.showinfo("Success", f"Report saved to:\n{save_path}")
+    
+# To run the tool
 if __name__ == "__main__":
     root = tk.Tk()
     app = EmailAnalyzerApp(root)
