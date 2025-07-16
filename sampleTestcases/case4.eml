@@ -1,0 +1,10 @@
+From: support@securebank.com
+Subject: Important Security Notification
+Authentication-Results: spf=fail dkim=fail dmarc=fail
+
+We detected unauthorized activity in your account.
+
+👉 Please verify your account immediately:  
+http://securebank-checkin.com/login
+
+SecureBank Security Team
