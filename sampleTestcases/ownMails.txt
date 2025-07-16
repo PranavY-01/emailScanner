@@ -1,0 +1,6 @@
+# You can also use your own emails from your Inbox or Outlook. For that:
+- Go to your desired mail
+- Click on more options on the top right of the mail
+- Select on Show Original
+- Download the mail
+- Drop the mail from your local memory to the tool.
