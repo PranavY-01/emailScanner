@@ -1,0 +1,7 @@
+From: itdesk@yourcompany.org
+Subject: Internal Policy Update
+Authentication-Results: spf=pass dkim=fail dmarc=pass
+
+Please click here to review the updated internet use policy.
+
+Your IT Dept.
